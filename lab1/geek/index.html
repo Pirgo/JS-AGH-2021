@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Page title -->
+
+    <title>Values, Types, and Operators</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">GEEK</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="numbers.html">Numbers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="strings.html">Strings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bool.html">Boolean</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <h1>Values, Types, and Operators</h1>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <p>
+              Inside the computer’s world, there is only data. You can read
+              data, modify data, create new data—but that which isn’t data
+              cannot be mentioned. All this data is stored as long sequences of
+              bits and is thus fundamentally alike. Bits are any kind of
+              two-valued things, usually described as zeros and ones. Inside the
+              computer, they take forms such as a high or low electrical charge,
+              a strong or weak signal, or a shiny or dull spot on the surface of
+              a CD. Any piece of discrete information can be reduced to a
+              sequence of zeros and ones and thus represented in bits. For
+              example, we can express the number 13 in bits. It works the same
+              way as a decimal number, but instead of 10 different digits, you
+              have only 2, and the weight of each increases by a factor of 2
+              from right to left. Here are the bits that make up the number 13,
+              with the weights of the digits shown below them:
+            </p>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                    <td>128</td>
+                    <td>64</td>
+                    <td>32</td>
+                    <td>16</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+              </tbody>
+            </table>
+            <p>
+              So that’s the binary number 00001101. Its non-zero digits stand
+              for 8, 4, and 1, and add up to 13.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              class="w-100 img-thumbnail"
+              src="https://geek.justjoin.it/wp-content/uploads/2020/12/nauka-JavaScript-do-Wigilii-1024x652.jpg"
+              alt="mac"
+            />
+          </div>
+        </div>
+        <h1>Values</h1>
+        <div class="row">
+          <div class="col-12">
+            <p>
+              Imagine a sea of bits—an ocean of them. A typical modern computer
+              has more than 30 billion bits in its volatile data storage
+              (working memory). Nonvolatile storage (the hard disk or
+              equivalent) tends to have yet a few orders of magnitude more. To
+              be able to work with such quantities of bits without getting lost,
+              we must separate them into chunks that represent pieces of
+              information. In a JavaScript environment, those chunks are called
+              values. Though all values are made of bits, 10 they play different
+              roles. Every value has a type that determines its role. Some
+              values are numbers, some values are pieces of text, some values
+              are functions, and so on. To create a value, you must merely
+              invoke its name. This is convenient. You don’t have to gather
+              building material for your values or pay for them. You just call
+              for one, and whoosh, you have it. They are not really created from
+              thin air, of course. Every value has to be stored somewhere, and
+              if you want to use a gigantic amount of them at the same time, you
+              might run out of memory. Fortunately, this is a problem only if
+              you need them all simultaneously. As soon as you no longer use a
+              value, it will dissipate, leaving behind its bits to be recycled
+              as building material for the next generation of values. This
+              chapter introduces the atomic elements of JavaScript programs,
+              that is, the simple value types and the operators that can act on
+              such values.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center">
+      <!-- Tutaj treść stopki / Here the content of the footer -->
+      <a href="mailto:twoj.adres.email">Mateusz Pieróg</a>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

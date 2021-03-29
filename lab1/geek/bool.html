@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible"
+          content="ie=edge"><!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"><!-- Page title -->
+
+          <link rel="stylesheet" href="style.css">
+    <title>
+      Boolean values
+    </title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">GEEK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="numbers.html">Numbers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="strings.html">Strings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bool.html">Boolean</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <main>
+        <div class="container">
+            <h1>Boolean values</h1>
+            <p>It is often useful to have a value that distinguishes between only two possibilities, like “yes” and “no” or “on” and “off”. For this purpose, JavaScript has a
+                Boolean type, which has just two values, true and false, which are written as
+                those words.</p>
+            <h3>Comparison</h3>
+            <p>Here is one way to produce Boolean values:</p>
+            <p>console.log(3 > 2)</p>
+            <p>// → true</p>
+            <p>console.log(3 < 2)</p>
+            <p>// → false</p>
+            <p>The > and < signs are the traditional symbols for “is greater than” and “is
+                less than”, respectively. They are binary operators. Applying them results in
+                a Boolean value that indicates whether they hold true in this case.
+                Strings can be compared in the same way.</p>
+            <p>console.log("Aardvark" < "Zoroaster")</p>
+            <p>// → true</p>
+            <p>The way strings are ordered is roughly alphabetic but not really what you’d
+                expect to see in a dictionary: uppercase letters are always “less” than lowercase
+                ones, so "Z" < "a", and nonalphabetic characters (!, -, and so on) are also
+                included in the ordering. When comparing strings, JavaScript goes over the
+                characters from left to right, comparing the Unicode codes one by one.
+                Other similar operators are >= (greater than or equal to), <= (less than or
+                equal to), == (equal to), and != (not equal to).</p>
+            <p>console.log("Itchy" != "Scratchy")</p>
+            <p>// → true</p>
+            
+            <p>There is only one value in JavaScript that is not equal to itself, and that is
+                NaN (“not a number”).</p>
+            <p>console.log(NaN == NaN)</p>
+            <p>// → false</p>
+            <p> NaN is supposed to denote the result of a nonsensical computation, and as
+                such, it isn’t equal to the result of any other nonsensical computations.</p>
+            <h3>Logical operators</h3>
+            <p>There are also some operations that can be applied to Boolean values themselves. JavaScript supports three logical operators: and, or, and not. These
+            can be used to “reason” about Booleans.</p>
+            <p>The && operator represents logical and. It is a binary operator, and its result
+                is true only if both the values given to it are true.</p>
+            <p>console.log(true && false)
+                // → false</p>
+            <p>console.log(true && true)
+                // → true</p>
+            
+            <p>The || operator denotes logical or. It produces true if either of the values
+                given to it is true.</p>
+            <p>console.log(false || true)
+                // → true</p>
+            <p>console.log(false || false)
+                // → false</p>
+            <p>Not is written as an exclamation mark (!). It is a unary operator that flips
+                the value given to it—!true produces false, and !false gives true.
+                When mixing these Boolean operators with arithmetic and other operators,
+                it is not always obvious when parentheses are needed. In practice, you can
+                usually get by with knowing that of the operators we have seen so far, || has
+                the lowest precedence, then comes &&, then the comparison operators (>, ==,
+                and so on), and then the rest. This order has been chosen such that, in typical
+                expressions like the following one, as few parentheses as possible are necessary:</p>
+            <p>1 + 1 == 2 && 10 * 10 > 50</p>
+            <p>The last logical operator I will discuss is not unary, not binary, but ternary,
+                operating on three values. It is written with a question mark and a colon, like
+                this:</p>
+            <p>console.log(true ? 1 : 2);
+                // → 1</p>
+            <p>console.log(false ? 1 : 2);
+                // → 2</p>
+            <p>This one is called the conditional operator (or sometimes just the ternary
+                operator since it is the only such operator in the language). The value on the
+                left of the question mark “picks” which of the other two values will come out.
+                When it is true, it chooses the middle value, and when it is false, it chooses the
+                value on the right.</p>
+            
+
+        </div>
+    </main>
+
+    <footer class="text-center">
+      <!-- Tutaj treść stopki / Here the content of the footer -->
+      <a href="mailto:twoj.adres.email">Mateusz Pieróg</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+          crossorigin="anonymous"></script>
+  </body>
+</html>
