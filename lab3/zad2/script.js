@@ -27,7 +27,6 @@ function calculatePrimes(iterations, multiplier) {
   }
 
 function doTimeConsumingCallculationsWithSetInterval(){
-    console.log("DD")
     SetIntervalTime.push(performance.now());
     if (SetIntervalTime.length > N){
         SetIntervalTime.shift()
@@ -36,7 +35,6 @@ function doTimeConsumingCallculationsWithSetInterval(){
 }
 
 function doTimeConsumingCallculationsWithSetTimeout(){
-    console.log("dd")
     SetTimeoutTime.push(performance.now());
     if (SetTimeoutTime.length > N){
         SetTimeoutTime.shift()
