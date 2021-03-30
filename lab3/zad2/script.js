@@ -30,7 +30,7 @@ function doTimeConsumingCallculationsWithSetInterval(){
     console.log("DD")
     SetIntervalTime.push(performance.now());
     if (SetIntervalTime.length > N){
-        SetIntervalTime.pop()
+        SetIntervalTime.shift()
     }
     calculatePrimes(1000, 1000000000);
 }
@@ -39,7 +39,7 @@ function doTimeConsumingCallculationsWithSetTimeout(){
     console.log("dd")
     SetTimeoutTime.push(performance.now());
     if (SetTimeoutTime.length > N){
-        SetTimeoutTime.pop()
+        SetTimeoutTime.shift()
     }
     calculatePrimes(1000, 1000000000);
     idTime = window.setTimeout(doTimeConsumingCallculationsWithSetTimeout, delay)
