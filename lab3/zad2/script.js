@@ -2,7 +2,7 @@
 var SetIntervalTime = [];
 var SetTimeoutTime = [];
 var N = 10;
-var delay;
+var delayD =  document.getElementById("delay");
 var idInt;
 var idTime;
 var idAnim;
@@ -75,7 +75,7 @@ function drawChart(){
 }
 
 function start(){
-    delay = document.getElementById("delay").value
+    delay = delayD.value
     if(delay == "" || isNaN(delay)){
         alert("please put a number");
         return;
