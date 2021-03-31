@@ -19,10 +19,11 @@ function decrement() {
     for (let i = 0; i < elements.length; i++) {
       form.appendChild(elements[i]);
     }
+    if(elements[0].innerText == 0){
+        licznik.value = 0
+    }
   }
-  else{
-      licznik.value = 0;
-  }
+  
 }
 
 function update() {
