@@ -44,12 +44,8 @@ function update() {
   }
 }
 
-window.addEventListener("load", () => {
-  update();
-});
+window.addEventListener("load", update);
 
-licznik.addEventListener("change", () => {
-  update()
-});
+licznik.addEventListener("change",update);
 
 setInterval(decrement, 1000);
